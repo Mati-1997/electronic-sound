@@ -1,0 +1,192 @@
+body {
+    margin: 0px;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(44, 44, 61);
+}
+
+nav ul li{
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.site-header,
+.site-footer {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    height: 10vh;
+    padding: 3rem 0rem;
+}
+
+.header-index {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding: 3rem 0rem;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: azure;
+}
+
+.hijo {
+    margin: 2rem 0rem;
+    border: 2px solid blueviolet;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hijo-index {
+    margin: 2rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    display: inline;
+}
+
+.boton {
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.boton:hover {
+    background-color: black;
+}
+/*Vista mobile aproximada */
+
+@media (max-width: 700px) {
+    .grid-padre {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+    }
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+        background-color: blueviolet;
+    }
+    li {
+        list-style-type: none;
+        
+    }
+    .header-index {
+        height: 6rem;
+        
+    }
+    .div-foto {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .img-index {
+        width: 100%;
+        height: auto;
+    }
+    .grid-form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+        color: whitesmoke;
+    }
+    .grid-hijo {
+        color: whitesmoke;
+    }
+    .grid-puntos-de-retiro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        color: whitesmoke;
+    }
+    .grid-hijo-puntos-de-retiro {
+        color: whitesmoke;
+        
+    }
+    #list{
+        list-style-type:disc;
+        pointer-events: none;
+    }
+}
+
+
+/* Vista destock*/
+
+@media (min-width:1024px) {
+    .grid-padre {
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .flexbox {
+        display: flex;
+        justify-content: center;
+        background-color: blueviolet;
+        top: 0px;
+        position: sticky;        
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+        }
+        .header-index {
+            height: 12vh;
+        }
+        .div-foto {
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+    
+        .img-index {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-form {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 95%;
+            max-width: 120rem;
+            margin-left: auto;
+            margin-right: auto;
+            color: azure;
+        }
+        .grid-hijo {
+            color: azure;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .grid-hijo {
+            color: whitesmoke;
+        }
+        .grid-puntos-de-retiro {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            color: whitesmoke;
+        }
+        .grid-hijo-puntos-de-retiro {
+            color: whitesmoke;
+            
+        }
+        .list{
+            display: list-item;
+            list-style-type:disc;
+            pointer-events: none;
+        }
+
+}

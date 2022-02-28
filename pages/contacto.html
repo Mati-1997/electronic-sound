@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <nav class="flexbox">
+        <ul> 
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+                <a href="puntos_de_retiro.html">Puntos de retiro</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="site-header">
+        <h1>Contacto</h1>
+    </header> 
+
+    <section class="grid-form">
+        
+        <div class="grid-hijo">
+            <form>
+                <label for="fnombre">*Nombre</label>
+                <br>
+                <input type="text" id="fnombre" required>
+        </div>
+
+        <div class="grid-hijo">
+            <form>
+                <label for="fapellido">*Apellido</label>
+                <br>
+                <input type="text" id="fapellido" required>
+        </div>
+
+        <div class="grid-hijo">
+            <label for="femail">*Email:</label>
+            <br>
+            <input type="email" id="femail" placeholder="coderhouse@gmail.com" required>
+        </div>
+
+        <div class="grid-hijo">
+            <label for="fcel">*Celular:</label>
+            <br>
+            <input type="tel" id="fcel" placeholder="1123456789" required>
+        </div>
+
+        <div class="grid-hijo">
+            <p1>Tipo de consulta</p1>
+            <br>
+            <select name="Tipo de consulta">
+                <option>Tipo de consulta</option>
+                <option>Creacion de evento</option>
+                <option>Venta de entradas</option>
+                <option>Compra de entradas</option>
+                <option>Traslados</option>
+                <option>Alquiler de sonido</option>
+                <option>Retiro de entradas</option>
+            </select>
+        </div>
+
+        <div class="grid-hijo">
+            <p>*Comentario</p>
+            <textarea placeholder="Escriba aquí"></textarea required>
+            <br>
+            <input class="boton" type="submit" value="Enviar"> 
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <h3>Redes sociales</h3>
+            <a href="http://facebook.com"><img class="style__logos" src="../imagenes/logo facebook.png" alt="Logo facebook" width="30px" height="30px"></a>
+            <a href="http://instagram.com"><img class="style__logos" src="../imagenes/logo instagram.png" alt="Logo instagram" width="30px" height="30px"></a>
+            <a href="https://www.whatsapp.com/"><img class="style__logos" src="../imagenes/logo whatsapp.png" alt="Logo whatsapp" width="30px" height="30px"></a>
+    </footer>
