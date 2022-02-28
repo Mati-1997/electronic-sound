@@ -5,11 +5,6 @@ body {
     background-color: rgb(44, 44, 61);
 }
 
-.gradiente1 {
-    background-image: linear-gradient(to bottom,blue, blueviolet);
-}
-
-
 
 input:focus {
     width: 200px;
@@ -84,7 +79,7 @@ a:hover {
 }
 /*Vista mobile aproximada */
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .grid-padre {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -105,7 +100,7 @@ a:hover {
     }
     .div-foto {
         width: 100%;
-        max-width: 700px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
@@ -135,6 +130,9 @@ a:hover {
         list-style-type:disc;
         pointer-events: none;
     }
+    #animacionnone {
+        animation: none;
+    }
 }
 
 
@@ -149,7 +147,7 @@ a:hover {
     .flexbox {
         display: flex;
         justify-content: center;
-        background-color: blueviolet;
+        background-color: rgb(162, 115, 206);
         top: 0px;
         position: sticky;        
         }
@@ -202,6 +200,9 @@ a:hover {
             display: list-item;
             list-style-type:disc;
             pointer-events: none;
+        }
+        .gradiente1 {
+            background-image: linear-gradient(to bottom,blue, blueviolet);
         }
 
 }
